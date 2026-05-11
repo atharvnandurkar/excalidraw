@@ -1,0 +1,54 @@
+Realtime Excalidraw Clone
+
+A realtime collaborative whiteboard inspired by Excalidraw, built with Next.js, TypeScript, WebSockets, and PostgreSQL.
+
+## Features
+
+- ✏️ Smooth freehand pencil drawing
+- 🔍 Zoom in / zoom out
+- ✋ Infinite canvas panning
+- ♾️ Infinite canvas rendering
+- ⚡ Low-latency realtime collaboration
+- 👥 Multiplayer room support
+- 🧠 WebSocket-based synchronization
+- 💾 Persistent room state
+- 🎨 Canvas rendering with viewport transforms
+- ↩️ Undo / Redo support
+- 🖱️ Selection and shape tools
+- 📦 Monorepo architecture
+
+---
+
+# Tech Stack
+
+## Frontend
+- Next.js 15
+- React 19
+- TypeScript
+- HTML5 Canvas API
+- TailwindCSS
+
+## Backend
+- Node.js
+- Express
+- WebSockets (ws)
+
+## Database
+- PostgreSQL
+- Prisma ORM
+
+---
+
+# Architecture
+
+```txt
+apps/
+ ├── frontend/
+ ├── http-backend/
+ └── ws-backend/
+
+packages/
+ ├── db/
+ ├── common/
+ ├── backend-common/
+ └── ui/
